@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ficha de herói RPG do personagem Warui, shinobi da Vila da Folha.">
+    <title>Ficha de Herói — Warui</title>
+
+    <!-- Fonte externa para reforçar a identidade visual -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Ícones temáticos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho" id="inicio">
+        <div class="container cabecalho-conteudo">
+            <div class="marca">
+                <span class="simbolo-marca">14</span>
+                <div>
+                    <span class="eyebrow">ARQUIVO SHINOBI</span>
+                    <strong>FICHA DE HERÓI</strong>
+                </div>
+            </div>
+
+            <nav class="navegacao" aria-label="Navegação principal">
+                <a href="#sobre"><i class="fa-solid fa-user"></i> Sobre</a>
+                <a href="#atributos"><i class="fa-solid fa-bolt"></i> Atributos</a>
+                <a href="#inventario"><i class="fa-solid fa-scroll"></i> Inventário</a>
+                <a href="#guilda"><i class="fa-solid fa-envelope"></i> Guilda</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- SOBRE O HERÓI -->
+        <section class="hero container" id="sobre">
+            <div class="hero-avatar card">
+                <div class="avatar-moldura">
+                    <img src="imagens/warui-avatar.svg" alt="Avatar ilustrado de Warui, jovem shinobi de aparência séria e cabelo escuro desalinhado">
+                </div>
+                <span class="status"><span></span> EM SERVIÇO</span>
+            </div>
+
+            <div class="hero-info">
+                <span class="eyebrow">REGISTRO Nº 014</span>
+                <h1>Warui</h1>
+                <p class="subtitulo">Shinobi • Espadachim • Manipulador de Raiton</p>
+
+                <p class="biografia">
+                    Órfão e prodígio, Warui cresceu no orfanato que passou a considerar sua verdadeira família.
+                    Aos sete anos, tornou-se uma das peças centrais de uma revolução envolvendo o clã Hyūga
+                    e grupos terroristas que avançaram sobre o País do Fogo. Desde então, aprendeu a lutar,
+                    investigar e tomar decisões difíceis para proteger as pessoas que ficaram ao seu lado.
+                </p>
+
+                <p class="biografia">
+                    Depois de destruir uma instalação de robôs e clonagem, capturar cinco cientistas e ajudar
+                    a recuperar parte do território ocupado, Warui passou a investigar uma rede de corrupção
+                    que financia a guerra. Sua força não vem apenas do combate: vem da determinação de mudar
+                    o sistema por dentro.
+                </p>
+
+                <div class="tags">
+                    <span>PAÍS DO FOGO</span>
+                    <span>ESPADACHIM</span>
+                    <span>RAITON</span>
+                    <span>INVESTIGADOR</span>
+                </div>
+            </div>
+
+            <aside class="ficha-resumo card">
+                <h2>Perfil</h2>
+                <ul class="lista-perfil">
+                    <li><span>Classe</span><strong>Shinobi de elite</strong></li>
+                    <li><span>Especialidade</span><strong>Combate e investigação</strong></li>
+                    <li><span>Elemento</span><strong>Raiton</strong></li>
+                    <li><span>Arma</span><strong>Katana</strong></li>
+                    <li><span>Status</span><strong>Ativo</strong></li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- ATRIBUTOS E HABILIDADES -->
+        <section class="secao container" id="atributos">
+            <div class="titulo-secao">
+                <span class="numero-secao">01</span>
+                <div>
+                    <span class="eyebrow">CAPACIDADE DE COMBATE</span>
+                    <h2>Atributos &amp; Habilidades</h2>
+                </div>
+            </div>
+
+            <div class="atributos-layout">
+                <div class="card atributos-card">
+                    <div class="atributo">
+                        <div class="atributo-topo"><span><i class="fa-solid fa-hand-fist"></i> Força</span><b>88%</b></div>
+                        <div class="barra"><div class="barra-preenchida" style="width:88%"></div></div>
+                    </div>
+
+                    <div class="atributo">
+                        <div class="atributo-topo"><span><i class="fa-solid fa-person-running"></i> Velocidade</span><b>94%</b></div>
+                        <div class="barra"><div class="barra-preenchida" style="width:94%"></div></div>
+                    </div>
+
+                    <div class="atributo">
+                        <div class="atributo-topo"><span><i class="fa-solid fa-shield-halved"></i> Defesa</span><b>82%</b></div>
+                        <div class="barra"><div class="barra-preenchida" style="width:82%"></div></div>
+                    </div>
+
+                    <div class="atributo">
+                        <div class="atributo-topo"><span><i class="fa-solid fa-bolt"></i> Raiton</span><b>99%</b></div>
+                        <div class="barra"><div class="barra-preenchida" style="width:99%"></div></div>
+                    </div>
+
+                    <div class="atributo">
+                        <div class="atributo-topo"><span><i class="fa-solid fa-brain"></i> Estratégia</span><b>96%</b></div>
+                        <div class="barra"><div class="barra-preenchida" style="width:96%"></div></div>
+                    </div>
+
+                    <div class="atributo">
+                        <div class="atributo-topo"><span><i class="fa-solid fa-heart"></i> Determinação</span><b>100%</b></div>
+                        <div class="barra"><div class="barra-preenchida" style="width:100%"></div></div>
+                    </div>
+                </div>
+
+                <div class="habilidades">
+                    <article class="habilidade card">
+                        <div class="icone"><i class="fa-solid fa-bolt"></i></div>
+                        <div>
+                            <h3>Domínio de Raiton</h3>
+                            <p>Controle extremamente avançado do elemento raio, usado tanto para ataque quanto para reforço de mobilidade.</p>
+                        </div>
+                    </article>
+
+                    <article class="habilidade card">
+                        <div class="icone"><i class="fa-solid fa-khanda"></i></div>
+                        <div>
+                            <h3>Kenjutsu</h3>
+                            <p>Estilo de combate com espada focado em precisão, velocidade e finalizações rápidas.</p>
+                        </div>
+                    </article>
+
+                    <article class="habilidade card">
+                        <div class="icone"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <div>
+                            <h3>Investigação</h3>
+                            <p>Rastreia rotas, instalações, financiadores e conexões políticas por trás do conflito.</p>
+                        </div>
+                    </article>
+
+                    <article class="habilidade card">
+                        <div class="icone"><i class="fa-solid fa-people-group"></i></div>
+                        <div>
+                            <h3>Liderança</h3>
+                            <p>Consegue unir aliados mesmo sob pressão, colocando a proteção das pessoas acima do próprio conforto.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- INVENTÁRIO E CONQUISTAS -->
+        <section class="secao secao-escura" id="inventario">
+            <div class="container">
+                <div class="titulo-secao">
+                    <span class="numero-secao">02</span>
+                    <div>
+                        <span class="eyebrow">EQUIPAMENTO &amp; HISTÓRICO</span>
+                        <h2>Inventário &amp; Conquistas</h2>
+                    </div>
+                </div>
+
+                <div class="inventario-grid">
+                    <article class="item card">
+                        <span class="raridade lendario">LENDÁRIO</span>
+                        <div class="item-icone"><i class="fa-solid fa-khanda"></i></div>
+                        <h3>Katana de Guerra</h3>
+                        <p>Arma principal de Warui, adaptada ao seu estilo veloz de combate e ao uso de Raiton.</p>
+                    </article>
+
+                    <article class="item card">
+                        <span class="raridade raro">RARO</span>
+                        <div class="item-icone"><i class="fa-solid fa-scroll"></i></div>
+                        <h3>Pergaminhos Shinobi</h3>
+                        <p>Um pergaminho principal nas costas e três menores presos ao cinturão para equipamentos e técnicas.</p>
+                    </article>
+
+                    <article class="item card">
+                        <span class="raridade raro">RARO</span>
+                        <div class="item-icone"><i class="fa-solid fa-hood-cloak"></i></div>
+                        <h3>Manto de Operação</h3>
+                        <p>Roupa de combate com capuz, pensada para mobilidade, infiltração e operações de campo.</p>
+                    </article>
+
+                    <article class="item card conquista">
+                        <span class="raridade conquista-tag">CONQUISTA</span>
+                        <div class="item-icone"><i class="fa-solid fa-industry"></i></div>
+                        <h3>Queda da Instalação</h3>
+                        <p>Destruição de uma instalação de robôs e clonagem, captura de cinco cientistas e recuperação de território.</p>
+                    </article>
+
+                    <article class="item card conquista">
+                        <span class="raridade conquista-tag">CONQUISTA</span>
+                        <div class="item-icone"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <h3>10% do Território</h3>
+                        <p>Operação que contribuiu para recuperar aproximadamente 10% do território do País do Fogo.</p>
+                    </article>
+
+                    <article class="item card conquista">
+                        <span class="raridade conquista-tag">MISSÃO ATUAL</span>
+                        <div class="item-icone"><i class="fa-solid fa-scale-balanced"></i></div>
+                        <h3>Desvendar a Corrupção</h3>
+                        <p>Investigar quem financia os terroristas e como a corrupção mantém a guerra funcionando.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO COM A GUILDA -->
+        <section class="secao container" id="guilda">
+            <div class="titulo-secao">
+                <span class="numero-secao">03</span>
+                <div>
+                    <span class="eyebrow">CANAL DE COMUNICAÇÃO</span>
+                    <h2>Contato com a Guilda</h2>
+                </div>
+            </div>
+
+            <div class="guilda-grid">
+                <div class="card guilda-texto">
+                    <span class="eyebrow">MENSAGEM</span>
+                    <h3>Precisa falar com Warui?</h3>
+                    <p>
+                        Use os canais abaixo para enviar uma mensagem, registrar uma missão ou solicitar
+                        informações sobre a investigação em andamento.
+                    </p>
+
+                    <div class="botoes">
+                        <a class="botao primario" href="mailto:guilda@warui-rpg.example">
+                            <i class="fa-solid fa-envelope"></i> Enviar mensagem
+                        </a>
+                        <a class="botao secundario" href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i> Comunidade
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card protocolo">
+                    <h3>Protocolo da Guilda</h3>
+                    <ol>
+                        <li>Identifique-se antes de solicitar uma missão.</li>
+                        <li>Não divulgue rotas ou informações estratégicas.</li>
+                        <li>Priorize civis e membros da equipe.</li>
+                        <li>Registre resultados após cada operação.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+            <p><strong>WARUI</strong> — Ficha de Herói RPG</p>
+            <p>Projeto acadêmico • HTML + CSS • Parte 1</p>
+            <a href="#inicio" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
